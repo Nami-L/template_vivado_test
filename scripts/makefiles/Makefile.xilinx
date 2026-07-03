@@ -16,7 +16,7 @@
 CUR_DATE   := $(shell date +%Y-%m-%d_%H-%M-%S)
 
 # Directories
-GIT_DIR     := $(git rev-parse --show-toplevel)
+GIT_DIR     := $(shell git rev-parse --show-toplevel)
 ROOT_DIR    := $(CURDIR)
 RUN_DIR     := $(ROOT_DIR)/sim
 LOGS_DIR    := $(ROOT_DIR)/logs
