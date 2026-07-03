@@ -10,6 +10,6 @@ A continuación se colocan una serie de comando que deben ejecutarse desde termi
 export GIT_ROOT=$(git rev-parse --show-toplevel)
 export UVM_WORK="$GIT_ROOT/work/direct"
 mkdir -p work/direct && cd work/direct
-ln -sf $GIT_ROOT/compuerta_and/scripts/makefiles/Makefile.xilinx Makefile
+ln -sf $GIT_ROOT/scripts/makefiles/Makefile.xilinx Makefile
 make
 ```
