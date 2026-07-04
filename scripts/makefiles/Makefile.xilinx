@@ -59,8 +59,11 @@ endif
 # ==============================  TOOLS SETUP  ================================
 
 # Files
-RTL_FILES = $(RTL_DIR)/and_gate.sv
-TB_FILE = $(TB_DIR)/tb_and.sv
+RTL_FILES = $(RTL_DIR)/and_gate.sv \
+			$(RTL_DIR)/xor_gate.sv \
+			$(RTL_DIR)/medio_sumador.sv 
+
+TB_FILE = $(TB_DIR)/tb_mediosum.sv
 
 # Vivado XVLOG/XELAB/XSIM options
 FILES =  $(RTL_FILES) $(TB_FILE)

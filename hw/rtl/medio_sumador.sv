@@ -11,11 +11,25 @@
 // [Revisions]      -
 //=============================================================================
 
-module and_gate (
-input logic a,
-input logic b,
-output logic c
+// ===================================================
+// Half Adder (Gate Level)
+module medio_sumador(
+    input a,
+    input b,
+    output sum,
+    output carry
 );
+    // XOR for sum
+    xor_gate u_xor (
+        .a(a),
+        .b(b),
+        .c(sum)
+    );
 
-  assign c = (a & b);
+    // AND for carry
+    and_gate u_and (
+        .a(a),
+        .b(b),
+        .c(carry)
+    );
 endmodule

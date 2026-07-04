@@ -11,11 +11,13 @@
 // [Revisions]      -
 //=============================================================================
 
-module and_gate (
+
+module xor_gate (
 input logic a,
 input logic b,
 output logic c
 );
-
-  assign c = (a & b);
+  
+  assign c = (a ^ b);
+ 
 endmodule
