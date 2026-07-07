@@ -15,19 +15,20 @@ module test (
     $display("Begin Of Simulation.");
  //   get_config_args();
     
+    fork
+          // Monitor
+    monitor_output();
+    join_none
     // Apply reset
     reset();
 
+
 fork
     // Stimulus
-    begin
+ 
     send_data_port_a();
  
-    end
-    begin 
-    // Monitor
-    monitor_output();
-    end
+
 
 join_any
     // Drain time
