@@ -72,7 +72,7 @@ export GIT_ROOT=$(git rev-parse --show-toplevel)
 export DIRECT_WORK="$GIT_ROOT/work/direct"
 mkdir -p "$DIRECT_WORK" && \
 cd "$DIRECT_WORK" && \
-ln -sf "$GIT_ROOT/scripts/makefiles/Makefile.xilinx" Makefile && \
+ln -sf "$GIT_ROOT/scripts/makefiles/Makefile.xilinx" Makefile 
 make
 ```
 
@@ -106,7 +106,7 @@ export GIT_ROOT=$(git rev-parse --show-toplevel)
 export UVM_WORK="$GIT_ROOT/work/uvm"
 mkdir -p "$UVM_WORK" && \
 cd "$UVM_WORK" && \
-ln -sf "$GIT_ROOT/verification/scripts/makefiles/Makefile.xilinx" Makefile && \
+ln -sf "$GIT_ROOT/verification/scripts/makefiles/Makefile.xilinx" Makefile 
 make
 ```
 
